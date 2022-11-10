@@ -41,8 +41,13 @@
     <section class="section order">
         <div class="container">
     <h1 class="main-heading">Ефективні рішення для вашого бізнесу</h1>
-    <button class="button main-button" type="button">Замовити послугу</button>
+    <button class="button main-button" type="button" data-modal-open>Замовити послугу</button>
 </div>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+  <button class="button" data-modal-close></button>
+  </div>  
+  </div>
 </section>
 
     <!---------------ADVANTAGES-------------- -->
@@ -97,9 +102,21 @@
     <div class="container">
     <h2 class="second-heading">Чим ми займаємося</h2>
     <ul class="list">
-        <li class="item" ><img src="./images/img-1.jpg" alt="Комп'ютери" width="370"></li>
-        <li class="item" ><img src="./images/img-2.jpg" alt="Телефони" width="370"></li>
-        <li class="item" ><img src="./images/img-3.jpg" alt="Планшети" width="370"></li>
+        <li class="item" ><img src="./images/img-1.jpg" alt="Комп'ютери" width="370">
+          <div class="uptext">
+            <p class="text">Десктопні додатки</p>
+          </div>
+        </li>
+        <li class="item" ><img src="./images/img-2.jpg" alt="Телефони" width="370">
+          <div class="uptext">
+            <p class="text">Мобільні додатки</p>
+          </div>
+        </li>
+        <li class="item" ><img src="./images/img-3.jpg" alt="Планшети" width="370">
+          <div class="uptext">
+            <p class="text">Дизайнерські рішення</p>
+          </div>
+        </li>
     </ul>
 </div>
 </section>
@@ -294,6 +311,6 @@
 </div>
 </footer>
 
-
+<script src="./modal.js"></script>
 </body>
 </html>
