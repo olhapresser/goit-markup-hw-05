@@ -206,7 +206,6 @@ transition-duration: 250ms;
         
             height: 4px;
             width: 100%;
-        top: 76px;
         bottom: -1px;
             border-radius: 2px;
         
@@ -279,7 +278,7 @@ transition-duration: 250ms;
     
         background-color: rgba(0, 0, 0, 0.2);
 
-        transition-property: opacity;
+        transition-property: opacity, visibility;
 transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -558,7 +557,7 @@ transition-duration: 250ms;
     border: var(--icon-colour) solid 1px;
     border-radius: 4px;
 
-    transition-property: border-color, color;
+    transition-property: border-color, fill;
 transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -566,7 +565,6 @@ transition-duration: 250ms;
 .customers .link:hover, .customers .link:focus{
     fill: var(--accent-color);
     border-color: var(--accent-color);
-    border-radius: 4px;
 }
 
 .customers .list{
@@ -589,6 +587,7 @@ justify-content: center;
 .icon-customer1, .icon-customer2, .icon-customer3,.icon-customer4, .icon-customer5, .icon-customer6{
 width: 106px;
 height: 60px;
+color: currentColor;
 }
 
     
